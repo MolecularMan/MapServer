@@ -29,6 +29,7 @@ for zdir in zdirs:
     for db in dblist:
         c.execute('ATTACH DATABASE "'+db+'" AS sasdb')
         c.execute('INSERT INTO tiles (x, y, b) SELECT x, y, b FROM sasdb.t')
+        conn.commit() #fixing 'database is locked'
         c.execute('DETACH DATABASE sasdb')
         conn.commit()
         print("SAS.Planet DB "+db+" inserted to "+directory+'/converted/'+zdir+'.sqlitedb')
