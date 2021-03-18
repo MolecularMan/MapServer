@@ -27,7 +27,7 @@ func TilesHandler(w http.ResponseWriter, r *http.Request) {
   defer db.Close()
 
 
-  rows, _ := db.Query("SELECT b from tiles WHERE x = "+x+" AND y = "+y+" AND z = "+z)
+  rows, _ := db.Query("SELECT b from tiles WHERE x = "+x+" AND y = "+y)
   defer rows.Close()
 
   var tileData []byte
