@@ -4,6 +4,7 @@ This is simple Golang Tile map server, worked with [SAS.Planet](http://www.sasgi
 
   - By defailt, start on port 8085 (can be changed with parameter -port, e.g. ```-port 8090```)
   - For converter, need set directory with z-starting folders (z1, z2, z3,..., zN) inside SAS.Planet sqlite-cache folder
+  - Can work with [Leaflet](https://leafletjs.com/) (an open-source JavaScript library for mobile-friendly interactive maps)
   - After running converter, will be created ```/converted``` folder with files for mapserver
 
 # Dependencies
