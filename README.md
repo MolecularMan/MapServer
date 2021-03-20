@@ -10,7 +10,6 @@ This is simple Golang Tile map server, worked with [SAS.Planet](http://www.sasgi
 # Dependencies
 
   - Go 1.15.6+
-  - Python 3
   - Go packages:
   -  ``` "github.com/gorilla/mux" ```
   - ``` "github.com/mattn/go-sqlite3"```
